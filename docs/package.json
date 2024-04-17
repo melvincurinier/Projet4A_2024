@@ -1,0 +1,27 @@
+{
+  "name": "docs",
+  "version": "1.0.0",
+  "description": "Traffic est un projet de fin d'étude. Il permet de visualiser sur une carte l'évolution du trafic sur une localisation. Les données ont été recueillies grâce aux GPS des taxis.",
+  "main": ".docsifytopdfrc.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "dependencies": {
+    "docsify-to-pdf": "^0.0.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "convert": "node_modules/.bin/docsify-to-pdf"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RomainBrocheton/PFE-doc.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RomainBrocheton/PFE-doc/issues"
+  },
+  "homepage": "https://github.com/RomainBrocheton/PFE-doc#readme"
+}

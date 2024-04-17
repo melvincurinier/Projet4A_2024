@@ -1,0 +1,37 @@
+<div id="sidebar">
+    <div class="wrapper">
+        <img src="/assets/branding/logo.png" alt="Logo">
+
+        <div id="navigation">
+            <div>
+                <p>Visualisation</p>
+                <nav>
+                    <a *ngIf="logged" routerLink="visu/automatique" routerLinkActive="active"><i class="fas fa-magic"></i> Automatique</a>
+                    <a routerLink="visu/manuelle" routerLinkActive="active"><i class="fas fa-wrench"></i> Manuelle</a>
+                </nav>
+            </div>
+
+            <div *ngIf="logged">
+                <p>Insertion</p>
+                <nav>
+                    <a routerLink="insert/automatique" routerLinkActive="active"><i class="fas fa-magic"></i> Automatique</a>
+                    <a routerLink="insert/manuelle" routerLinkActive="active"><i class="fas fa-wrench"></i> Manuelle</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <div id="router">
+        <router-outlet></router-outlet>
+    </div>
+
+    <div id="login">
+        <nav *ngIf="!logged">
+            <a routerLink="connexion" routerLinkActive="active"><i class="fas fa-sign-in-alt"></i> Connexion</a>
+            <a routerLink="inscription" routerLinkActive="active"><i class="fas fa-user-plus"></i> Inscription</a>
+        </nav>
+        <nav *ngIf="logged">
+            <a (click)="logout()"><i class="fas fa-sign-in-alt"></i> Déconnexion</a>
+        </nav>
+    </div>
+</div>
