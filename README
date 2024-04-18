@@ -31,7 +31,43 @@ Trouver un nouvel acronyme et logo ? (TrajEvoViz, ...)
 
 ## Versions technologies
 
+### API
+
+| Nom du logiciel | Version | Description                           |
+|-----------------|---------|---------------------------------------|
+| Node            | 21.6.2 | Serveur web                           |
+| Body Parser     | 1.20.2  | Parsing du corps des requêtes         |
+| Express         | 4.16.4  | Gestion des routes et services web    |
+| GridFS-Stream   | 1.1.1   | Permet de lire des fichiers GridFS depuis Mongo |
+| JsonWebToken    | 9.0.2   | Gestion des tokens JWT                |
+| Mongoose        | 5.4.3   | Gestion de la connexion à MongoDB     |
+| ShellJS         | 0.8.3   | Utilisation de commandes Shell en JS  |
+| UUID            | 8.3.2   | Génération d'identifiants utilisateurs uniques |
+
+### Frontend
+
+| Nom du logiciel | Version | Description                           |
+|-----------------|---------|---------------------------------------|
+| @angular        | 17.3.1  | Angular                               |
+| Leaflet         | 1.7.1   | API de cartographie                   |
+| RXJS            | 6.6.0   | Observables                           |
+| TsLib           | 2.3.0   | TypeScript helpers                    |
+
 ## Informations des utilisateurs
+
+Dans mongo.js, 
+
+    userSchema = mongoose.Schema({
+        _id: String,
+        email : String,
+        password : String,
+    })
+
+    userModel = mongoose.model( 'users', userSchema )
+
+    getUserModel, newUserModel
+
+Les informations sont stockées dans la collection 'users'.
 
 ## Acronyme et logo
 
