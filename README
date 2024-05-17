@@ -2,32 +2,31 @@
 
 ## ToDo (version initiale)
 
-Passer à un mongodb local, mettre en place l'environnement de dév, faire tourner la version initiale (2021)
-https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-ubuntu/
+- [x] Passer à un mongodb local, mettre en place l'environnement de dév, faire tourner la version initiale (2021) https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-ubuntu/
 
-Voir où sont stockées les informations sur les utilisateurs (e-mails, mots de passe)
+- [x] Voir où sont stockées les informations sur les utilisateurs (e-mails, mots de passe)
 
-Faire en sorte que la config/le choix soit facile pour les couleurs utilisées pour chaque type d'évolution (emerging (vert), decreasing (rouge), latent (bleu), lost (jaune), jumping (gris), default (rose))
+- [ ] Faire en sorte que la config/le choix soit facile pour les couleurs utilisées pour chaque type d'évolution (emerging (vert), decreasing (rouge), latent (bleu), lost (jaune), jumping (gris), default (rose))
 
-Affichage d'une légende pour ces couleurs ? (en permanance ou si clic quelque part)
+- [ ] Affichage d'une légende pour ces couleurs ? (en permanance ou si clic quelque part)
 
-Faciliter le chargement de resultats (grid+color) :
-- Possibilité de charger tous les fichiers d'un dossier (pour les utilisateurs connectés)
-- Alimenter la base avec les resultats existants (autres fichiers seront fournis)
+- [ ] Faciliter le chargement de resultats (grid+color) :
+    - Possibilité de charger tous les fichiers d'un dossier (pour les utilisateurs connectés)
+    - Alimenter la base avec les resultats existants (autres fichiers seront fournis)
 
-Revoir l'ergonomie, la facilité d'utilisation de l'appli/l'interface
+- [ ] Revoir l'ergonomie, la facilité d'utilisation de l'appli/l'interface
 
-Point sur les fonctionnalités restantes/manquantes (par rapport à la version précédente de 2019)
+- [ ] Point sur les fonctionnalités restantes/manquantes (par rapport à la version précédente de 2019)
 
-Sécuriser mongodb
+- [ ] Sécuriser mongodb
 
-Faciliter le deploiement avec docker (aussi pour mongobd avec bind mount pour stockage donnees hors du container, dans l'espace disque classique pour persistance au container, faciliter les sauvegardes, ...)
+- [ ] Faciliter le deploiement avec docker (aussi pour mongobd avec bind mount pour stockage donnees hors du container, dans l'espace disque classique pour persistance au container, faciliter les sauvegardes, ...)
 
-Trouver un nouvel acronyme et logo ? (TrajEvoViz, ...)
+- [ ] Trouver un nouvel acronyme et logo ? (TrajEvoViz, ...)
 
 ### Remarques :
 - ne pas utiliser docker pour le moment
-- bien noter et lister dans un fichier les numéros de version utilisés (mongo ..., node ..., etc.)
+- bien noter et lister dans un fichier les numér os de version utilisés (mongo ..., node ..., etc.)
 
 ## Versions technologies
 
@@ -65,10 +64,18 @@ Dans mongo.js,
 
     userModel = mongoose.model( 'users', userSchema )
 
-    getUserModel, newUserModel
+fonctions disponibles : getUserModel, newUserModel
 
-Les informations sont stockées dans la collection 'users'.
+Les informations sont stockées dans la collection 'users' de la bdd mongo.
 
 ## Acronyme et logo
 
 Exemple : TrajEvoViz
+
+## MongoDB local
+
+const config = {
+    MONGO_URL: 'mongodb://localhost:27017/traj'
+};
+
+##
