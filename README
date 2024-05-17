@@ -22,7 +22,7 @@
 
 - [ ] Faciliter le deploiement avec docker (aussi pour mongobd avec bind mount pour stockage donnees hors du container, dans l'espace disque classique pour persistance au container, faciliter les sauvegardes, ...)
 
-- [ ] Trouver un nouvel acronyme et logo ? (TrajEvoViz, ...)
+- [x] Trouver un nouvel acronyme et logo ? (TrajEvoViz, ...)
 
 ### Remarques :
 - ne pas utiliser docker pour le moment
@@ -68,10 +68,6 @@ fonctions disponibles : getUserModel, newUserModel
 
 Les informations sont stockées dans la collection 'users' de la bdd mongo.
 
-## Acronyme et logo
-
-Exemple : TrajEvoViz
-
 ## MongoDB local
 
 const config = {
@@ -79,3 +75,9 @@ const config = {
 };
 
 ##
+
+## Acronyme et logo
+
+TaxiFlow
+
+Exemple : TrajEvoViz, Tracker
