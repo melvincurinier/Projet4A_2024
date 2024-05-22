@@ -17,11 +17,17 @@ var tabLongitudeRecSW: Array<string>, tabLatitudeRecSW: Array<string>, tabLongit
 var arrowTab: Array<L.Polyline>;
 
 const mapAreaColor = [{name: "EMERGING", color: "#009900"}, 
-                {name: "DECREASING", color: "#b32d00"}, 
+                {name: "DECREASING", color: "#B32D00"}, 
                 {name: "LATENT", color: "#0039e6"}, 
                 {name: "LOST", color: "#ffff00"}, 
                 {name: "JUMPING", color: "#3d3d29"}, 
-                {name: "DEFAULT", color: "#f442e8"}];
+                {name: "DEFAULT", color: "#f442e8"},
+                {name: "DECREASING EMERGING", color:"FFA500"},
+                {name: "DECREASING LATENT", color:"8A2BE2"},
+                {name: "DECREASING LATENT EMERGING", color:"FF8C00"},
+                {name: "LATENT DECREASING EMERGING", color:"FF4500"},
+                {name: "LATENT EMERGING", color:"00CED1"},
+                {name: "LATENT DECREASING", color:"9400D3"}];
 
 @Component({
   selector: 'app-map',

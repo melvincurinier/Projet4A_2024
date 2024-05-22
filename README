@@ -6,7 +6,7 @@
 
 - [x] Voir où sont stockées les informations sur les utilisateurs (e-mails, mots de passe)
 
-- [ ] Faire en sorte que la config/le choix soit facile pour les couleurs utilisées pour chaque type d'évolution (emerging (vert), decreasing (rouge), latent (bleu), lost (jaune), jumping (gris), default (rose))
+- [x] Faire en sorte que la config/le choix soit facile pour les couleurs utilisées pour chaque type d'évolution (emerging (vert), decreasing (rouge), latent (bleu), lost (jaune), jumping (gris), default (rose))
 
 - [ ] Affichage d'une légende pour ces couleurs ? (en permanance ou si clic quelque part)
 
@@ -70,11 +70,35 @@ Les informations sont stockées dans la collection 'users' de la bdd mongo.
 
 ## MongoDB local
 
-const config = {
-    MONGO_URL: 'mongodb://localhost:27017/traj'
-};
+    const config = {
+        MONGO_URL: 'mongodb://localhost:27017/traj'
+    };
 
-##
+## Couleurs utilisés pour les types d'évolution
+
+dans le dossier front, src, app, composant map
+
+    const mapAreaColor = [{name: "EMERGING", color: "#009900"}, 
+                    {name: "DECREASING", color: "#b32d00"}, 
+                    {name: "LATENT", color: "#0039e6"}, 
+                    {name: "LOST", color: "#ffff00"}, 
+                    {name: "JUMPING", color: "#3d3d29"}, 
+                    {name: "DEFAULT", color: "#f442e8"}];
+
+A ajouter : "DECREASING EMERGING", "DECREASING LATENT", "DECREASING LATENT EMERGING", "LATENT DECREASING EMERGING", "LATENT EMERGING", "LATENT DECREASING"
+
+La constante devient const mapAreaColor = [{name: "EMERGING", color: "#009900"}, 
+                {name: "DECREASING", color: "#B32D00"}, 
+                {name: "LATENT", color: "#0039e6"}, 
+                {name: "LOST", color: "#ffff00"}, 
+                {name: "JUMPING", color: "#3d3d29"}, 
+                {name: "DEFAULT", color: "#f442e8"},
+                {name: "DECREASING EMERGING", color:"FFA500"},
+                {name: "DECREASING LATENT", color:"8A2BE2"},
+                {name: "DECREASING LATENT EMERGING", color:"FF8C00"},
+                {name: "LATENT DECREASING EMERGING", color:"FF4500"},
+                {name: "LATENT EMERGING", color:"00CED1"},
+                {name: "LATENT DECREASING", color:"9400D3"}];
 
 ## Acronyme et logo
 
