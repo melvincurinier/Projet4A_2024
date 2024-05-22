@@ -10,7 +10,7 @@
 
 - [ ] Affichage d'une légende pour ces couleurs ? (en permanance ou si clic quelque part)
 
-- [ ] Faciliter le chargement de resultats (grid+color) :
+- [x] Faciliter le chargement de resultats (grid+color) :
     - Possibilité de charger tous les fichiers d'un dossier (pour les utilisateurs connectés)
     - Alimenter la base avec les resultats existants (autres fichiers seront fournis)
 
@@ -99,6 +99,10 @@ La constante devient const mapAreaColor = [{name: "EMERGING", color: "#009900"},
                 {name: "LATENT DECREASING EMERGING", color:"FF4500"},
                 {name: "LATENT EMERGING", color:"00CED1"},
                 {name: "LATENT DECREASING", color:"9400D3"}];
+
+## Faciliter le chargement de resultats
+
+C'est en fonction du SE, on n'a pas la main dessus.
 
 ## Acronyme et logo
 
