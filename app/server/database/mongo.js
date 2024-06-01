@@ -9,7 +9,7 @@ if(MONGO_URL === ''){
     throw 'Environment variable MONGO_URL is not set.';
 }
 
-mongoose.connect(MONGO_URL, function( error ){
+mongoose.connect(MONGO_URL, { useNewUrlParser: true, useUnifiedTopology: true },  function( error ){
     if( error ) {
         throw error; 
     } else {
