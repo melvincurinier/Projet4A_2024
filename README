@@ -8,17 +8,17 @@
 
 - [x] Faire en sorte que la config/le choix soit facile pour les couleurs utilisées pour chaque type d'évolution (emerging (vert), decreasing (rouge), latent (bleu), lost (jaune), jumping (gris), default (rose))
 
-- [ ] Affichage d'une légende pour ces couleurs ? (en permanance ou si clic quelque part)
+- [x] Affichage d'une légende pour ces couleurs ? (en permanance ou si clic quelque part)
 
 - [ ] Faciliter le chargement de resultats (grid+color) :
     - Possibilité de charger tous les fichiers d'un dossier (pour les utilisateurs connectés)
     - Alimenter la base avec les resultats existants (autres fichiers seront fournis)
 
-- [ ] Revoir l'ergonomie, la facilité d'utilisation de l'appli/l'interface
+- [x] Revoir l'ergonomie, la facilité d'utilisation de l'appli/l'interface
 
 - [ ] Point sur les fonctionnalités restantes/manquantes (par rapport à la version précédente de 2019)
 
-- [ ] Sécuriser mongodb
+- [x] Sécuriser mongodb
 
 - [ ] Faciliter le deploiement avec docker (aussi pour mongobd avec bind mount pour stockage donnees hors du container, dans l'espace disque classique pour persistance au container, faciliter les sauvegardes, ...)
 
