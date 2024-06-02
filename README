@@ -106,11 +106,11 @@ Comme on a une version plus récente de mongo, il y a des composantes dépréci�
 - (node:63346) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
 - (node:63346) [MONGODB DRIVER] Warning: Current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
 
-mongoose.connect(MONGO_URL, { useNewUrlParser: true, useUnifiedTopology: true },  function( error )
+mongoose.connect(MONGO_URL, { useNewUrlParser: true, useUnifiedTopology: true },  function( error ))
 
 
 ## Acronyme et logo
 
-TaxiFlow
+Flow
 
 Exemple : TrajEvoViz, Tracker
