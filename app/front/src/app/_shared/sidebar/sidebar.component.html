@@ -26,10 +26,6 @@
     </div>
 
     <div id="login">
-        <nav *ngIf="!logged">
-            <a routerLink="connexion" routerLinkActive="active"><i class="fas fa-sign-in-alt"></i> Connexion</a>
-            <a routerLink="inscription" routerLinkActive="active"><i class="fas fa-user-plus"></i> Inscription</a>
-        </nav>
         <nav *ngIf="logged">
             <a (click)="logout()"><i class="fas fa-sign-in-alt"></i> Déconnexion</a>
         </nav>

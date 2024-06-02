@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { AuthService } from 'src/app/_services/auth.service';
 
 @Component({
@@ -9,7 +10,7 @@ import { AuthService } from 'src/app/_services/auth.service';
 export class SidebarComponent implements OnInit {
   logged = false;
 
-  constructor(private auth: AuthService) { }
+  constructor(private auth: AuthService, private router : Router) { }
 
   ngOnInit(): void {
     this.logged = this.auth.isLogged();
@@ -21,7 +22,7 @@ export class SidebarComponent implements OnInit {
   logout(){
     this.auth.logout();
     this.logged = this.auth.isLogged();
-    location.href = '';
+    this.router.navigateByUrl('');
   }
 
 }
