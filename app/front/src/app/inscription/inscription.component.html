@@ -1,5 +1,15 @@
-<form (ngSubmit)="inscription(f)" #f="ngForm">
-    <input type="email" name="email" placeholder="E-Mail" ngModel required>
-    <input type="password" name="password" placeholder="Mot de passe" ngModel required>
-    <button type="submit" [disabled]="f.invalid">Inscription</button>
-</form>
+<div class="body">
+    <div class="login-container">
+        <h2>Inscription</h2>
+        <form (ngSubmit)="inscription(f)" #f="ngForm">
+            <div class="form-group">
+                <input type="email" name="email" placeholder="E-Mail" ngModel required>
+            </div>
+            <div class="form-group">
+                <input type="password" name="password" placeholder="Mot de passe" ngModel required>
+            </div>
+            <button type="submit" [disabled]="f.invalid">Inscription</button>
+        </form>
+        <p><a routerLink="../connexion" routerLinkActive="active">Connectez-vous ici</a></p>
+    </div>
+</div>

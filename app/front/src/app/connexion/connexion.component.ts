@@ -14,7 +14,7 @@ export class ConnexionComponent implements OnInit {
 
   ngOnInit(): void {
     if(this.auth.isLogged()){
-      this.router.navigateByUrl('/visu'); // Page par défaut
+      this.router.navigateByUrl('/home'); // Page par défaut
     }
   }
 
@@ -29,7 +29,7 @@ export class ConnexionComponent implements OnInit {
       }
       else{
         this.auth.setUser(res.token); // on stocke le token utilisateur
-        location.href = '/';          // on redirige à la racine
+        location.href = '/home';          // on redirige à la racine
       }
     });
   }

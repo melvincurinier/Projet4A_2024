@@ -9,18 +9,18 @@ import { VisuAutoComponent } from './visu-auto/visu-auto.component';
 import { VisuManuComponent } from './visu-manu/visu-manu.component';
 
 const routes: Routes = [
+  { path: '', redirectTo: 'connexion', pathMatch: 'full' },
+  { path: 'connexion', component: ConnexionComponent },
+  { path: 'inscription', component: InscriptionComponent },
   { 
-    path: '', component: HomepageComponent, children: [
-      { path: '', component: VisuManuComponent },
+    path: 'home', component: HomepageComponent, children: [
       { path: 'visu', component: VisuManuComponent },
       { path: 'visu/automatique', component: VisuAutoComponent },
       { path: 'visu/manuelle', component: VisuManuComponent },
       { path: 'insert', component: InsertAutoComponent },
       { path: 'insert/automatique', component: InsertAutoComponent },
-      { path: 'insert/manuelle', component: InsertManuComponent },
-      { path: 'connexion', component: ConnexionComponent },
-      { path: 'inscription', component: InscriptionComponent }
-    ]  
+      { path: 'insert/manuelle', component: InsertManuComponent }
+    ]
   }
 ];
 

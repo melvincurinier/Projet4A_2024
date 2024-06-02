@@ -21,6 +21,7 @@ export class SidebarComponent implements OnInit {
   logout(){
     this.auth.logout();
     this.logged = this.auth.isLogged();
+    location.href = '';
   }
 
 }
