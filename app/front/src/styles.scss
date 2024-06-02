@@ -8,7 +8,6 @@ html, body, *{
     box-sizing: border-box;
 
     font-family: 'Montserrat';
-    font-weight: 200;
 }
 
 html, body{
@@ -88,7 +87,7 @@ form{
     }
 
     input, .input-file label{
-        background: $background;
+        background: #000;
         color: $textLight;
 
         &::placeholder{
@@ -137,7 +136,7 @@ form{
 
         width: 100%;
 
-        background: $background;
+        background: #000;
         color: $textLight;
 
         padding: $margin 1.5 * $margin;

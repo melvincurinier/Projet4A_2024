@@ -32,8 +32,10 @@ div#sidebar{
         margin: $margin 0;
 
         p{
-            color: $primaryVariant;
-            margin: $margin;
+            color: #afe8bc;
+            margin-top: 2rem;
+            margin-left: 1rem;
+            font-size: 25px;
         }
 
         nav{
@@ -50,7 +52,7 @@ div#sidebar{
                 text-decoration: none !important;
                 transition: all 400ms;
 
-                background-image: linear-gradient($surfaceDarkVariant, $surfaceDarkVariant);
+                background-image: linear-gradient(to left, #000, #474747);
                 background-repeat: no-repeat;
                 background-size: 0% 100%;
 
