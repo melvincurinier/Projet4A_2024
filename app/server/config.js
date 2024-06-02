@@ -1,5 +1,7 @@
+require('dotenv').config();
+
 const config = {
-    MONGO_URL: 'mongodb://localhost:27017/traj'
+  MONGO_URL: process.env.MONGO_URL
 };
 
 module.exports = config;
