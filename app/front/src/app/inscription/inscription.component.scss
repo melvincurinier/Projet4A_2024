@@ -15,6 +15,12 @@ $text-color: #333;
     margin: 0;
 }
 
+img{
+    width: 150px;
+    position: absolute;
+    top: 75px;
+}
+
 .login-container {
     background: $container-bg-color;
     padding: 20px;
