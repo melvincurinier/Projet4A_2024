@@ -36,6 +36,7 @@
 |-----------------|---------|---------------------------------------|
 | Node            | 21.6.2 | Serveur web                           |
 | Body Parser     | 1.20.2  | Parsing du corps des requêtes         |
+| Dot Env         | 16.4.5  | Gestion des variables d'environnement |
 | Express         | 4.16.4  | Gestion des routes et services web    |
 | GridFS-Stream   | 1.1.1   | Permet de lire des fichiers GridFS depuis Mongo |
 | JsonWebToken    | 9.0.2   | Gestion des tokens JWT                |
