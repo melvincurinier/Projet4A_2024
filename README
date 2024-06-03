@@ -75,6 +75,13 @@ Les informations sont stockées dans la collection 'users' de la bdd mongo.
         MONGO_URL: 'mongodb://localhost:27017/traj'
     };
 
+dans un fichier .env : MONGO_URL='mongodb://localhost:27017/traj'
+
+    const config = {
+        MONGO_URL: process.env.MONGO_URL
+    };
+
+
 ## Couleurs utilisés pour les types d'évolution
 
 dans le dossier front, src, app, composant map
